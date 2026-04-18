@@ -1,0 +1,30 @@
+/* cards */
+.card {
+    background: whitesmoke;
+    border-radius: 8px;
+    width: 15vw; height: 400px;
+    cursor: pointer;
+    transition: border-radius .3s ease-in;
+}
+.card:hover { border-radius: 0; }
+/* card image */
+.card-img {
+    width: 100%; height: 180px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: border-radius .3s ease-in;
+}
+.card:hover > .card-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/* card body */
+.card-body {
+    padding: 0 8px 8px 6px;
+    margin-top: 10px;
+}
+.card-title { font-size: 14pt; }
+.card-text {
+    font-size: 12.5pt;
+    margin-top: 4px;
+}

@@ -1,5 +1,36 @@
+:root {
+    --purple: rgb(0, 37, 139);
+    --green: rgb(21, 160, 44);
+}
+
 * { margin: 0; padding: 0; }
 
 body {
     font-family: Arial, sans-serif;
+    background: var(--purple);
+}
+
+header {
+    padding: 15px 10vw;
+    background: var(--green);
+}
+/* logo */
+.logo {
+    font-size: 12pt;
+    letter-spacing: 1px;
+}
+.logo a { color: whitesmoke; }
+/* all links */
+a { text-decoration: none; }
+
+main { margin-top: 80px; }
+
+.container {
+    margin: 0 auto;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px 20px;
+    flex-wrap: wrap;
 }
