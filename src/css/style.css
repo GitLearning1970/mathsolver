@@ -1,5 +1,5 @@
 :root {
-    --purple: rgb(30, 0, 139);
+    --purple: rgb(0, 37, 139);
     --green: rgb(21, 160, 44);
 }
 
@@ -22,3 +22,15 @@ header {
 .logo a { color: whitesmoke; }
 /* all links */
 a { text-decoration: none; }
+
+main { margin-top: 80px; }
+
+.container {
+    margin: 0 auto;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+}
