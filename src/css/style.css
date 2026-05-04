@@ -1,9 +1,16 @@
 :root {
-    --purple: rgb(0, 37, 139);
+    --purple: rgb(10, 103, 156);
     --green: rgb(21, 160, 44);
 }
 
 * { margin: 0; padding: 0; }
+
+/* diplay flex */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -28,9 +35,6 @@ main { margin-top: 80px; }
 .container {
     margin: 0 auto;
     width: 75vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 40px 20px;
     flex-wrap: wrap;
 }

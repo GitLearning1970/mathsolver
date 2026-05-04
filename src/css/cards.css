@@ -21,10 +21,10 @@
 /* card body */
 .card-body {
     padding: 0 8px 8px 6px;
-    margin-top: 10px;
+    margin-top: 14px;
 }
 .card-title { font-size: 14pt; }
 .card-text {
     font-size: 12.5pt;
-    margin-top: 4px;
+    margin-top: 6px;
 }
