@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/problems.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <title>MathSolver</title>
@@ -18,15 +19,38 @@
     </header>
 
     <main role="main">
-        <section class="container"> <!-- container -->
+        <section class="container d-flex" style="display: none;"> <!-- container -->
             <article class="card">
                 <img src="https://picsum.photos/200?random=1" class="card-img">
                 <div class="card-body">
                     <h4 class="card-title">Expression Solver</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae molestias expedita reiciendis. Porro voluptatum animi architecto, nesciunt libero aliquam, totam, sunt velit distinctio nobis quam vitae ab veritatis reiciendis.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae molestias expedita reiciendis.</p>
                 </div>
             </article>
         </section> <!-- /end container -->
+
+        <section class="problem" style="display: block;"> <!-- math expression -->
+            <div class="expression">
+                <input type="number" class="input-num" step=".01" placeholder="Number" autofocus>
+                <div class="expression-set"> <!-- expression -->
+                    <select class="math-op"> <!-- operation select -->
+                        <option value="sum">Sum (+)</option>
+                        <option value="sub">Subtraction (-)</option>
+                        <option value="mult">Multiplication (X)</option>
+                        <option value="div">Division (÷)</option>
+                    </select> <!-- /end operation select -->
+                    <input type="number" class="input-num" step=".01" placeholder="Number">
+                </div> <!-- /end expression -->
+                <div class="inputs-btns d-flex">
+                    <!-- add elements -->
+                    <button type="button" class="add-elements" title="Add elements">+</button>
+                    <!-- remove elements -->
+                    <button type="button" class="remove-elements" title="Remove elements">-</button>
+                </div>
+            </div>
+        </section> <!-- /end math expression -->
     </main>
+
+    <script src="../js/expression-solver.js"></script>
 </body>
 </html>
